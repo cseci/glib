@@ -875,7 +875,7 @@ g_cond_wait_until (GCond  *cond,
   struct timespec ts;
   gint status;
 
-#ifdef HAVE_PTHREAD_COND_TIMEDWAIT_RELATIVE_NP
+#if 0
   /* end_time is given relative to the monotonic clock as returned by
    * g_get_monotonic_time().
    *
